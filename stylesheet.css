@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+  font-family: sans-serif;
+  color: #303236;
+}
+
+.unslider li {
+  text-align: center;
+}
+.banner,
+.nav div,
+.content {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.banner,
+.content {
+  width: 960px;
+}
+.banner {
+  text-align: center;
+}
+/*navigation bar*/
+.nav div {
+    width: 70%;
+}
+.nav p {
+  display: inline-block;
+  width: 24%;
+  height: 87.53px;
+  padding: 30px 10px 10px 10px;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #eb9694;
+  position: relative;
+  font-size: 1.33em;
+  -webkit-transition: border-bottom .25s linear;
+  -moz-transition: border-bottom .25s linear;
+  -ms-transition: border-bottom .25s linear;
+  -o-transition: border-bottom .25s linear;
+  transition: border-bottom .25s linear;
+  border-radius: 2px;
+  color: #fff;
+}
+div.nav div p#start:hover,
+div.nav div p#oferta:hover,
+div.nav div p#galeria:hover,
+div.nav div p#kontakt:hover {
+  border-bottom: 10px solid #64aeae;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav div p {
+    font-size: 1em;
+    line-height: 87.53px;
+  }
+}
+/*page content*/
+.content {
+  position: relative;
+  padding: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  background-color: #fff;
+  /*border-right: 5px solid #64aeae;
+  border-bottom: 5px solid #64aeae;*/
+}
+.content::after {
+  content: "";
+  background-color: #64aeae;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  height: 98%;
+  width: 5px;
+}
+.content::before {
+  content: "";
+  background-color: #64aeae;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  height: 5px;
+  width: 98%;
+}
+.content p.imgContainer {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+.content p.imgContainer::after {
+  content: "";
+  background-color: #64aeae;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  height: 98%;
+  width: 5px;
+}
+.content p.imgContainer::before {
+  content: "";
+  background-color: #64aeae;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  height: 5px;
+  width: 98%;
+}
+.content img:nth-child(5) {
+  float: right;
+  margin-left: 20px;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+/*footer on the bottom of the site*/
+.footer {
+  background-color: #dadada;
+  box-shadow: inset 0px 3px 5px #d0d0d0;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.7em;
+  color: #555555;
+}
